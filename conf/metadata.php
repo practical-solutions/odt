@@ -52,3 +52,8 @@ $meta['outline_list_style'] = array('multichoice', '_choices' => array('Normal',
 $meta['olist_label_align'] = array('multichoice', '_choices' => array('left', 'center', 'right'));
 
 $meta['convert_to_pdf'] = array('string');
+
+# Added in modified version
+$meta['showdocxexportbutton'] = array('onoff');
+$meta['doc file extension']   = array('string');
+$meta['doc convert command']  = array('string');

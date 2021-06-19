@@ -58,3 +58,14 @@ p.index_preview_odt {
 #reminder.index_preview_odt {
     color: red;
 }
+
+/******************************************************************************** 
+Show warning to prevent overwriting of this fork of dw2pdf
+*********************************************************************************/
+#extensionplugin__odt .button.reinstall {display:none;}
+#extensionplugin__odt .button.update {display:none;}
+#extensionplugin__odt .msg.notify {display:none;}
+
+#extensionplugin__odt .actions.col {color:blue;}
+#extensionplugin__odt .actions.col:before{content: "Upgrade button hidden to prevent unintentional overwriting of this modified version of the plugin";}
+/********************************************************************************/
