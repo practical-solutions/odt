@@ -73,7 +73,7 @@ class renderer_plugin_odt_pagedocx extends renderer_plugin_odt_page {
      */
     protected function convert () {
         global $ID;
-                
+
         $format = $this->config->getConvertTo ();
         if ($format == 'docx') {
             // Prepare temp directory
@@ -94,6 +94,7 @@ class renderer_plugin_odt_pagedocx extends renderer_plugin_odt_page {
             // Convert file
             io_saveFile($file, $this->doc);
             exec ($command, $output, $result);
+
             if ($result) {
                 $errormessage = '';
                 foreach ($output as $line) {

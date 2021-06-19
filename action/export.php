@@ -161,6 +161,11 @@ class action_plugin_odt_export extends DokuWiki_Action_Plugin {
             $format = 'pdf';
         }
 
+        // check conversion format
+        if ($odt_export && strpos($action, '_docx') !== false) {
+            $format = 'docx';
+        }
+
         // single page export:
         // rename action to the actual renderer component
         if($action == 'export_odt') {

@@ -58,5 +58,5 @@ $conf['olist_label_align'] = 'right';
 $conf['convert_to_pdf'] = 'libreoffice --headless --convert-to pdf --outdir %outdir% %sourcefile% 2>&1';
 
 # Added in modified version
-$conf['doc convert command'] = 'libreoffice --headless --convert-to doc --outdir %outdir% %sourcefile% 2>&1';
-$conf['doc file extension']   = 'doc';
+$conf['doc convert command'] = 'libreoffice --headless --convert-to docx --outdir %outdir% %sourcefile% 2>&1';
+$conf['doc file extension']   = 'docx';
