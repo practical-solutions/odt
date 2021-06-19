@@ -8,5 +8,5 @@ The ```doc``` format was chosen because the generated ```docx``` files could not
 
 Changing to ```docx``` can thus simply be achieved by changing following options
 * ```doc convert command``` =  ```libreoffice --headless --convert-to docx --outdir %outdir% %sourcefile% 2>&1'```
-* ```doc file extension```  = ```doc```;
+* ```doc file extension```  = ```docx```;
 
